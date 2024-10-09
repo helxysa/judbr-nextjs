@@ -39,7 +39,7 @@ Isso iniciará o servidor de desenvolvimento e você poderá acessar o sistema e
 
 ## Estrutura do Projeto
 
-
+```
 judbr/
 ├── src/
 │ ├── app/
@@ -60,8 +60,7 @@ judbr/
 ├── README.md
 ├── tailwind.config.js
 └── tsconfig.json
-
-
+```
 
 ## Tecnologias Utilizadas
 
@@ -70,9 +69,7 @@ judbr/
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-## Contribuindo
 
-Instruções para contribuir com o projeto...
 
 ## Licença
 
