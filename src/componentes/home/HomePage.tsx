@@ -3,13 +3,14 @@
 import Link from 'next/link';
 import Nav from './Nav';
 import Footer from './Footer';
+import Section from './Section';
 
 const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Nav />
       <main className="flex-grow">
-        <section className="bg-purple-100 py-20">
+        <section className="bg-[rgb(115,103,240)]/[0.16] py-20">
           <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h1 className="text-3xl md:text-5xl font-bold text-purple-800 mb-6">Gestão Jurídica Simplificada</h1>
@@ -22,12 +23,18 @@ const HomePage = () => {
             </div>
             
             <div className="md:w-1/2 text-center md:text-right mt-10 md:mt-0">
-              <h2 className="text-4xl md:text-6xl font-bold text-purple-300 bg-purple-100 p-4 rounded-lg shadow-md inline-block">Bem vindo ao <span className="text-purple-800">JUDBR</span></h2>
+            <div className="text-4xl md:text-6xl font-bold text-purple-300  p-4 rounded-lg   inline-block">
+              <img 
+                src="https://ultimatum.com.br/wp-content/uploads/2019/10/home-15-banner-simage-new-1.png" 
+                alt="JUDBR Logo" 
+                className="max-w-full h-auto"
+              />  
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="py-20">
+        <section className="py-40">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-purple-800 text-center mb-12">Recursos Principais</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -47,14 +54,8 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="bg-purple-700 text-white py-20">
-          <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-8">Pronto para simplificar sua prática jurídica?</h2>
-            <Link href="/signup" className="bg-white text-purple-700 px-8 py-3 rounded-md font-semibold hover:bg-purple-100 transition duration-300 inline-block">
-              Comece seu teste gratuito
-            </Link>
-          </div>
-        </section>
+        <Section />
+
       </main>
       <Footer />
     </div>  
