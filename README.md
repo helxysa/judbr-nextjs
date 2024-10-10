@@ -71,11 +71,3 @@ judbr/
 
 
 
-
-
-Copyright (c) [2024] [JUDBR]
-Todos os direitos reservados.
-
-Este software e seu código-fonte associado são propriedade exclusiva de [JUDBR].
-Nenhuma parte deste software pode ser copiada, modificada, distribuída, ou reproduzida de qualquer forma
-sem permissão prévia por escrito do proprietário.
