@@ -39,7 +39,7 @@ function Section() {
         </span>
       </h2>
       <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-10 md:mb-10 text-center md:text-left">
-        O nosso Time de Especialistas, alinhados à Tecnologia, trabalha duro para apoiá-lo no exercício da Advocacia. A percepção de que a advocacia estava ficando defasada em relação à inovação e tecnologia, nos inspirou a desenvolver diversas soluções para apoiar você na gestão de seu escritório. Veja o que o nosso CEO tem a dizer e conheça melhor a Ultimatum:
+        O nosso Time de Especialistas, alinhados à Tecnologia, trabalha duro para apoiá-lo no exercício da Advocacia. A percepção de que a advocacia estava ficando defasada em relação à inovação e tecnologia, nos inspirou a desenvolver diversas soluções para apoiar você na gestão de seu escritório. :
       </p>
       <div className="flex space-x-4 justify-center md:justify-start mb-8 md:mb-12">
         <SocialIcon icon="instagram" />
