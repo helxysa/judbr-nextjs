@@ -1,14 +1,14 @@
 'use client'
 
-import Link from 'next/link';
-import Nav from './Nav';
-import Footer from './Footer';
+
 import Section from './Section';
+import FrequentlyAsked from './FrequentlyAsked';
 
 const HomePage = () => {
   return (
+
     <div className="flex flex-col min-h-screen">
-      <Nav />
+      
       <main className="flex-grow">
         <section className="bg-[rgb(115,103,240)]/[0.16] py-20">
           <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
@@ -34,30 +34,30 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="py-40">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-bold text-purple-800 text-center mb-12">Recursos Principais</h2>
+        <section className="py-40 ">
+          <div className="container mx-auto px-6 ">
+            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Recursos Principais</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-purple-700 mb-4">Gestão de Casos</h3>
-                <p className="text-purple-600">Organize e acompanhe todos os seus casos em um só lugar.</p>
+                <p className="text-gray-900">Organize e acompanhe todos os seus casos em um só lugar.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-purple-700 mb-4">Faturamento Automático</h3>
-                <p className="text-purple-600">Crie e envie faturas com poucos cliques.</p>
+                <p className="text-gray-900">Crie e envie faturas com poucos cliques.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-purple-700 mb-4">Agenda Integrada</h3>
-                <p className="text-purple-600">Gerencie compromissos e prazos com facilidade.</p>
+                <p className="text-gray-900">Gerencie compromissos e prazos com facilidade.</p>
               </div>
             </div>
           </div>
         </section>
 
         <Section />
-
+        <FrequentlyAsked />
       </main>
-      <Footer />
+      
     </div>  
   );
 };

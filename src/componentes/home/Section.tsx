@@ -17,8 +17,8 @@ function Section() {
           return words[(currentIndex + 1) % words.length]
         })
         setIsAnimating(false)
-      }, 500) // Agora corresponde à duração da animação
-    }, 3000) // Muda a cada 3 segundos
+      }, 1300) 
+    }, 2000) 
   
     return () => clearInterval(interval)
   }, [])

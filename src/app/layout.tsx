@@ -1,4 +1,8 @@
+import Nav from "@/componentes/home/Nav";
 import "./globals.css";
+import Footer from "@/componentes/home/Footer";
+
+
 
 export default function RootLayout({
   children,
@@ -7,7 +11,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-white">{children}</body>
+      <body className="bg-white">
+        <Nav />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }

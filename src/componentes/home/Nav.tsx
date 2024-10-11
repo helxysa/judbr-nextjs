@@ -21,10 +21,10 @@ const Nav = () => {
           
           {/* Menu para desktop */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/pages/payment" className="text-purple-600 hover:text-purple-800">Preços</Link>
-            <Link href="#" className="text-purple-600 hover:text-purple-800">Recursos</Link>
-            <Link href="#" className="text-purple-600 hover:text-purple-800">Sobre Nós</Link>
-            <Link href="#" className="text-purple-600 hover:text-purple-800">Contato</Link>
+            <Link href="/pages/precos/" className="text-purple-600 hover:text-purple-800">Preços</Link>
+            <Link href="/pages/recursos" className="text-purple-600 hover:text-purple-800">Recursos</Link>
+            <Link href="/pages/sobre-nos" className="text-purple-600 hover:text-purple-800">Sobre Nós</Link>
+            <Link href="/pages/contato" className="text-purple-600 hover:text-purple-800">Contato</Link>
           </div>
           
           {/* Botão de menu para mobile */}
@@ -44,7 +44,7 @@ const Nav = () => {
         {/* Menu mobile */}
         <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/pages/payment" className="block text-purple-600 hover:text-purple-800 py-2">Preços</Link>
+            <Link href="/pages/precos" className="block text-purple-600 hover:text-purple-800 py-2">Preços</Link>
             <Link href="#" className="block text-purple-600 hover:text-purple-800 py-2">Recursos</Link>
             <Link href="#" className="block text-purple-600 hover:text-purple-800 py-2">Sobre Nós</Link>
             <Link href="#" className="block text-purple-600 hover:text-purple-800 py-2">Contato</Link>
