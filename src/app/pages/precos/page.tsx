@@ -72,21 +72,22 @@ export default function Precos() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <PricingCard 
-              title="Solo"
+              title="Advogado"
               price={isMonthly ? "R$49" : "R$470"}
               features={["Chat Interno", "Notificações em Tempo Real", "Pagamentos Nativos"]}
             />
             <PricingCard 
-              title="Essential"
+              title="Escritorio"
               price={isMonthly ? "R$69" : "R$662"}
               features={["Tudo do plano Solo", "Campos Personalizados", "Funções de Segurança Personalizadas"]}
             />
             <PricingCard 
-              title="Business"
+              title="Banca"
               price={isMonthly ? "R$89" : "R$854"}
               features={["Tudo do plano Essential", "Mensagens Bidirecionais", "Assinatura Digital Ilimitada"]}
               isPopular={true}
             />
+            
           </div>
 
           <div className="text-center mt-12">
@@ -125,9 +126,9 @@ const features = [
   ];
   
   const plans = [
-    { name: 'SOLO', monthlyPrice: 49, annualPrice: 470, features: [0, 1, 2, 3, 4, 5, 6, 7, 8] },
-    { name: 'ESSENTIAL', monthlyPrice: 69, annualPrice: 662, features: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] },
-    { name: 'BUSINESS', monthlyPrice: 89, annualPrice: 854, features: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] },
+    { name: 'ADVOGADO', monthlyPrice: 49, annualPrice: 470, features: [0, 1, 2, 3, 4, 5, 6, 7, 8] },
+    { name: 'ESCRITORIO', monthlyPrice: 69, annualPrice: 662, features: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] },
+    { name: 'BANCA', monthlyPrice: 89, annualPrice: 854, features: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] },
   ];
   
   function PricingComparison() {
@@ -161,7 +162,7 @@ const features = [
                       R${isAnnual ? plan.annualPrice : plan.monthlyPrice}
                     </div>
                     <div className="text-xs">por usuário/mês</div>
-                    {plan.name === 'BUSINESS' && (
+                    {plan.name === 'BANCA' && (
                       <div className="bg-[#24B364] text-white text-xs font-semibold px-1 sm:px-2 py-0.5 sm:py-1 rounded mt-1 sm:mt-2">
                         POPULAR
                       </div>

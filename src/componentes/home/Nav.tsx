@@ -12,19 +12,19 @@ const Nav = () => {
   };
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-purple-900 ">
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
-          <div className="text-purple-700 font-bold text-xl">
+          <div className="text-white font-bold text-xl">
             <Link href="/">JUDBR</Link>
           </div>
           
           {/* Menu para desktop */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/pages/precos/" className="text-purple-600 hover:text-purple-800">Preços</Link>
-            <Link href="/pages/recursos" className="text-purple-600 hover:text-purple-800">Recursos</Link>
-            <Link href="/pages/sobre-nos" className="text-purple-600 hover:text-purple-800">Sobre Nós</Link>
-            <Link href="/pages/contato" className="text-purple-600 hover:text-purple-800">Contato</Link>
+            <Link href="/pages/precos/" className="text-white hover:text-purple-800">Preços</Link>
+            <Link href="/pages/recursos" className="text-white hover:text-purple-800">Recursos</Link>
+            <Link href="/pages/sobre-nos" className="text-white hover:text-purple-800">Sobre Nós</Link>
+            <Link href="/pages/contato" className="text-white hover:text-purple-800">Contato</Link>
           </div>
           
           {/* Botão de menu para mobile */}
@@ -35,7 +35,7 @@ const Nav = () => {
           </button>
           
           <div className="hidden md:block">
-            <Link href="#" className="bg-[#7367F0] text-white px-4 py-2 rounded-md hover:bg-[#8F85F3] transition duration-300">
+            <Link href="#" className="bg-[#8F85F3] text-white px-4 py-2 rounded-md hover:bg-[#8F85F3] transition duration-300">
               Experimente Grátis
             </Link>
           </div>
