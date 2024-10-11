@@ -92,35 +92,44 @@ export default function LegalPracticeStats() {
     return () => intervals.forEach(clearInterval);
   }, [isVisible]);
 
+ 
+  
   return (
-    <div ref={ref} className="container mx-auto px-4 py-12 md:py-24">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        Mais do que um software de gerenciamento de prática legal
-      </h1>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-        {stats.map((stat, index) => (
-          <div 
-            key={index} 
-            className="bg-white p-8 rounded-lg shadow-lg text-center transform transition duration-500 ease-in-out hover:scale-105 animate-fadeIn"
-            style={{ 
-              animationDelay: `${index * 200}ms`,
-            }}
-          >
-            <p className="text-5xl md:text-6xl font-bold text-blue-600 mb-4">
-              {isVisible
-                ? (stat.value.includes('+') 
-                    ? counts[index].toFixed(1) + '+'
-                    : counts[index].toFixed(0) + '%')
-                : '0'}
-            </p>
-            <p className="text-base text-gray-700">{stat.description}</p>
-          </div>
-        ))}
-      </div>
-      
+    <div ref={ref} className="py-20 bg-gray-100">
+      <div className="container mx-auto px-4 md:px-30 lg:px-40 xl:px-48">
+        <h1 className="text-3xl font-bold text-gray-900 text-center mb-12">
+          Mais do que um software de gerenciamento de prática legal
+        </h1>
         
-{/*         
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {stats.map((stat, index) => (
+            <div 
+              key={index} 
+              className="bg-gray-200 p-6 rounded-lg shadow-md flex flex-col items-center"
+              style={{ 
+                animationDelay: `${index * 200}ms`,
+              }}
+            >
+              <p className="text-4xl font-bold text-blue-600 mb-4 text-center">
+                {isVisible
+                  ? (stat.value.includes('+') 
+                      ? counts[index].toFixed(0) + '+'
+                      : counts[index].toFixed(0) + '%')
+                  : '0'}
+              </p>
+              <div className="w-16 h-px bg-gray-400 mb-4"></div>
+              <p className="text-gray-700 text-sm text-center">{stat.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+  {/*     
+
+    Adicionar parceiros depois
         <p className="text-center text-lg mb-8">
           PracticePanther Partners With Over 50 Bar Associations
         </p>
@@ -132,6 +141,3 @@ export default function LegalPracticeStats() {
             </div>
           ))}
         </div> */}
-      </div>
-    );
-  }
