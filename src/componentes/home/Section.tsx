@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 
-function Section() {
+export default function Section() {
   const [currentWord, setCurrentWord] = useState('Tempo')
   const [isAnimating, setIsAnimating] = useState(false)
   const words = ['Tempo', 'Qualidade', 'Praticidade']
@@ -90,4 +90,3 @@ function SocialIcon({ icon }: { readonly icon: string }) {
   )
 }
 
-export default Section;

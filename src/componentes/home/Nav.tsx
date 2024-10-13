@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 
-const Nav = () => {
+export default function Nav(){
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -58,4 +58,3 @@ const Nav = () => {
   );
 };
 
-export default Nav;

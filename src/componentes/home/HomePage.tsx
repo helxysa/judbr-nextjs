@@ -5,12 +5,13 @@ import FrequentlyAsked from './FrequentlyAsked';
 import LegalPracticeStats from './LegalPraticeStats';
 import FeaturedIn from './FeaturedIn';
 import Testimonials from './Testmonials';
+import StartFreeTrial from './StartFreeTrail';
 
 import { ModalProvider } from '../modals/ModalEmail';
 import EmailModal from '../modals/ModalEmail';
 
 
-const HomePage = () => {
+export default function HomePage (){
 
  
 
@@ -75,7 +76,9 @@ const HomePage = () => {
   </div>
 </div>
 
-<div className="container bg-gray-200 mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 space-y-16 py-12 md:py-20">
+<StartFreeTrial />
+
+<div className="container bg-white mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 space-y-16 py-12 md:py-20">
   <FrequentlyAsked />
 </div>
           
@@ -87,7 +90,6 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
 
 
 {/* <section className="bg-gray-10 py-20">

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const FeaturedIn = () => {
+export default function FeaturedIn (){
   const logos = [
     { src: "/image/above-law.png", alt: "Above The Law", maxWidth: 62 },
     { src:"/image/abc.png", alt: "ABC", maxWidth: 37},
@@ -40,4 +40,3 @@ const FeaturedIn = () => {
   );
 };
 
-export default FeaturedIn
