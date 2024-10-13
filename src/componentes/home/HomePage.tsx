@@ -32,11 +32,11 @@ export default function HomePage (){
         <input 
           type="email" 
           placeholder="Seu e-mail" 
-          className="mb-4 sm:mb-0 sm:mr-4 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600 w-full sm:w-auto bg-gray-100"
+          className="mb-4 sm:mb-0 sm:mr-4 px-4 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-green-600 w-full sm:w-auto bg-gray-100"
         />
         <button 
           type="submit" 
-          className="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition duration-300 w-full sm:w-auto"
+          className="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition duration-300 w-full sm:w-auto"
         >
           INICIAR TESTE GRÁTIS
         </button>

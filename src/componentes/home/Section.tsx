@@ -51,7 +51,7 @@ export default function Section() {
 
     <div className="container mx-auto text-center text-black">
     <h2 className="text-2xl md:text-3xl lg:text-2xl font-bold mb-8">Pronto para simplificar sua prática jurídica?</h2>
-    <Link href="/signup" className="bg-[#0337CC] text-white px-6 md:px-8 py-3 rounded-md font-semibold hover:bg-purple-700 transition duration-300 inline-block">
+    <Link href="/signup" className="bg-[#0337CC] text-white px-6 md:px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 inline-block">
       Comece seu teste gratuito
     </Link>
   </div>

@@ -26,12 +26,12 @@ export default function StartFreeTrial(){
           <input
             type="email"
             placeholder="Digite seu e-mail"
-            className="w-full sm:w-64 px-4 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full sm:w-64 px-4 py-2 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
           <button
             type="submit"
-            className="w-full sm:w-auto px-6 py-2 bg-green-500 hover:bg-green-600 rounded-md font-semibold transition duration-300"
+            className="w-full sm:w-auto px-6 py-2 bg-green-500 hover:bg-green-600 rounded-full font-semibold transition duration-300"
           >
             INICIAR TESTE GRATUITO
           </button>

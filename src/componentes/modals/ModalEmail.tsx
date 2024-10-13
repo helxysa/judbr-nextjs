@@ -76,12 +76,12 @@ function ModalEmail() {
               placeholder="Digite seu email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-grow px-4 py-2 rounded-md focus:outline-none"
+              className="flex-grow px-4 py-2 rounded-full focus:outline-none"
               required
             />
             <button
               type="submit"
-              className="bg-green-500 text-white font-semibold py-2 px-6 rounded-md hover:bg-green-600 transition duration-300"
+              className="bg-green-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-green-600 transition duration-300"
             >
               ACESSO GRATUITO
             </button>

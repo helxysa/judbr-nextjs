@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 export default function Nav(){
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function Nav(){
     <nav className="bg-blue-700 py-4">
       <div className="container mx-auto px-9 md:px-30 lg:px-40 xl:px-48 flex justify-between items-center">
         <div className="flex items-center">
-          <Link href="/" className="text-white font-bold text-xl">JUDBR</Link>
+          <Link href="/" className="text-white font-bold text-xl"><Image src="/image/judbr-white.png" alt="JUDBR Logo" width={80} height={80} /></Link>
         </div>
         
         {/* Menu para desktop */}
@@ -35,7 +35,7 @@ export default function Nav(){
         </button>
         
         <div className="hidden md:block">
-          <Link href="#" className="bg-[#24B364] text-white px-4 py-2 rounded-md hover:bg-[#008c3f] transition duration-300">
+          <Link href="#" className="bg-[#24B364] text-white px-4 py-2 rounded-full hover:bg-[#008c3f] transition duration-300">
             Experimente Grátis
           </Link>
         </div>
@@ -48,7 +48,7 @@ export default function Nav(){
           <Link href="#" className="block text-white hover:text-gray-100 py-2">Recursos</Link>
           <Link href="#" className="block text-white hover:text-gray-100 py-2">Sobre Nós</Link>
           <Link href="#" className="block text-white hover:text-gray-100 py-2">Contato</Link>
-          <Link href="#" className="block bg-[#24B364] text-white px-4 py-2 rounded-md hover:bg-purple-700 mt-4 transition duration-300">
+          <Link href="#" className="block bg-[#24B364] text-white px-4 py-2 rounded-full hover:bg-purple-700 mt-4 transition duration-300">
             Experimente Grátis
           </Link>
         </div>
