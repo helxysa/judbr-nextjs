@@ -1,30 +1,31 @@
+import Link from "next/link";
+
 const testimonials = [
     {
-      quote: "Minha coisa favorita é, de longe, a interface intuitiva. Não dá para exagerar o quão importante é a facilidade de uso em tecnologia quando se trata de profissionais jurídicos.",
-      author: "Ross D. Gardner",
-      role: "Advogado Empresarial no Escritório de Advocacia Ross D. Gardner",
+      quote: "Desde que começamos a usar o JudBR, nossa produtividade aumentou 30% e os clientes percebem a diferença",
+      author: "Maria Silva",
+      role: "Advogada",
       avatarColor: "#4A90E2",
       
     },
     {
       quote: "O JUDBR é como ter um funcionário em tempo integral por uma fração do custo. Não conseguiria administrar meu escritório de advocacia sem o JUDBR. O software é fácil de usar, o suporte é excelente e a empresa está sempre lançando novos recursos para tornar a gestão do meu escritório mais fácil e eficiente!",
-      author: "Kathleen Day-Seiter",
-      role: "Proprietária do Escritório de Advocacia Kathleen Day-Seiter",
+      author: "Kathleen Amaral",
+      role: "Escritório de Advocacia",
       avatarColor: "#50E3C2",
       
     },
     {
-      quote: "Eu amo todos os aspectos deste software. O JUDBR me economiza HORAS todos os meses fazendo minha faturação e emissão de notas. Leva apenas alguns minutos e alguns cliques de um botão e está pronto, as faturas estão a caminho dos meus clientes com uma forma fácil de pagar online integrada diretamente no documento.",
-      author: "Robin Estes",
-      role: "Advogada",
-      avatarColor: "#F5A623",
-     
-    }
+        quote: "O JUDBR revolucionou nossa prática jurídica. Economizamos horas preciosas todos os meses com a gestão de processos e prazos. Com apenas alguns cliques, temos acesso a todos os detalhes dos casos, intimações e decisões judiciais.",
+        author: "João da Silva",
+        role: "Advogado",
+        avatarColor: "#F5A623",
+      }
   ];
   
 export default function Testimonials() {
     return (
-      <section className="bg-gray-100 py-12 md:py-20">
+        <section className="bg-gray-100 pt-8 pb-4 md:pt-6 md:pb-3">
         <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48">
           <h2 className="text-3xl md:text-4xl text-center mb-12 font-bold ">O que nossos clientes dizem</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -50,8 +51,13 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
+         
+           
         </div>
       </div>
+      <div className="flex justify-center py-10">
+          <Link href="/pages/sobre-nos" className="text-blue-500 hover:text-blue-600 underline">Veja mais depoimentos</Link>
+          </div>
     </section>
     );
   };

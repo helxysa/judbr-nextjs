@@ -11,24 +11,24 @@ const faqItems: FAQItem[] = [
     answer: "Software de gerenciamento de prática jurídica ou software de gerenciamento de prática legal é um tipo de software projetado especificamente para ajudar equipes jurídicas a gerenciar suas práticas e relacionamentos com clientes. Ele serve como um hub digital onde equipes jurídicas podem armazenar e organizar informações críticas de caso, contato e documento, permitindo que eles acessem e rastream as informações necessárias para lidar com casos de forma eficaz..."
   },
   {
-    question: "Como o software de gerenciamento de prática jurídica pode beneficiar as empresas jurídicas?",
-    answer: "O software de gerenciamento de prática jurídica pode beneficiar as empresas jurídicas de várias maneiras..."
+    question: "Como funciona o teste gratuito?",
+    answer: "  Nosso teste gratuito permite que você experimente todas as funcionalidades do nosso software de gerenciamento de prática jurídica por 14 dias, sem compromisso. Durante este período, você terá acesso completo a todas as ferramentas e recursos, podendo avaliar como o sistema se adapta às necessidades do seu escritório. Para começar, basta se cadastrar em nosso site, fornecer algumas informações básicas e você estará pronto para explorar. Não é necessário fornecer dados de cartão de crédito para iniciar o teste. Ao final do período, você pode optar por assinar um plano ou simplesmente deixar a conta expirar sem custos adicionais."
   },
   {
-    question: "Qual é o melhor software de gerenciamento de prática jurídica?",
-    answer: "O melhor software de gerenciamento de prática jurídica depende das necessidades específicas da sua empresa jurídica..."
+    question: "O software é seguro?",
+    answer: "Sim, o software é seguro e confiável. Nós nos preocupamos com a segurança dos dados dos nossos usuários. Todos os dados são armazenados de forma segura e não são compartilhados com terceiros."
   },
   {
-    question: "Qual é o melhor software de gerenciamento de prática jurídica?",
-    answer: "O melhor software de gerenciamento de prática jurídica depende das necessidades específicas da sua empresa jurídica..."
+    question: "Posso cancelar a qualquer momento?",
+    answer: "Sim, você pode cancelar a qualquer momento. Não há necessidade de fornecer uma razão para cancelar. Você pode fazer isso acessando sua conta e selecionando a opção de cancelamento."
   },
   {
-    question: "Qual é o melhor software de gerenciamento de prática jurídica?",
-    answer: "O melhor software de gerenciamento de prática jurídica depende das necessidades específicas da sua empresa jurídica..."
+    question: "Há suporte técnico disponivel?",
+    answer: "Sim, temos suporte técnico disponível para ajudar você com qualquer problema que possa surgir. Você pode entrar em contato com nosso suporte técnico através do e-mail suporte@judbr.com.br."
   },
   {
-    question: "Qual é o melhor software de gerenciamento de prática jurídica?",
-    answer: "O melhor software de gerenciamento de prática jurídica depende das necessidades específicas da sua empresa jurídica..."
+    question: "O que é o JUDBR?",
+    answer: "O JUDBR é um software de gerenciamento de prática jurídica que ajuda equipes jurídicas a gerenciar suas práticas e relacionamentos com clientes. Ele serve como um hub digital onde equipes jurídicas podem armazenar e organizar informações críticas de caso, contato e documento, permitindo que eles acessem e rastream as informações necessárias para lidar com casos de forma eficaz..."
   },
   // Add more FAQ items as needed
 ];
