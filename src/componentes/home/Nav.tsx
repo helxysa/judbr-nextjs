@@ -29,7 +29,7 @@ export default function Nav(){
         
         {/* Botão de menu para mobile */}
         <button onClick={toggleMobileMenu} className="md:hidden focus:outline-none" aria-label="Menu">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="white">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>

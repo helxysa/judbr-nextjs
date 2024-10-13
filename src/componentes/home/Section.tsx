@@ -4,58 +4,67 @@ import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 
 export default function Section() {
-  const [currentWord, setCurrentWord] = useState('Tempo')
-  const [isAnimating, setIsAnimating] = useState(false)
-  const words = ['Tempo', 'Qualidade', 'Praticidade']
+  const [displayText, setDisplayText] = useState(' |')
+  const words = ['Tempo! ', 'Qualidade! ', 'Praticidade!']
+  const [wordIndex, setWordIndex] = useState(0)
+  const [charIndex, setCharIndex] = useState(0)
+  const [isDeleting, setIsDeleting] = useState(false)
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIsAnimating(true)
-      setTimeout(() => {
-        setCurrentWord(prevWord => {
-          const currentIndex = words.indexOf(prevWord)
-          return words[(currentIndex + 1) % words.length]
-        })
-        setIsAnimating(false)
-      }, 1300) 
-    }, 2000) 
-  
-    return () => clearInterval(interval)
-  }, [])
+    const typeEffect = () => {
+      const currentWord = words[wordIndex]
+
+      if (isDeleting) {
+        setDisplayText(currentWord.substring(0, charIndex - 1) + ' |')
+        setCharIndex(prev => prev - 1)
+
+        if (charIndex === 0) {
+          setIsDeleting(false)
+          setWordIndex((prev) => (prev + 1) % words.length)
+        }
+      } else {
+        setDisplayText(currentWord.substring(0, charIndex + 1) + ' |')
+        setCharIndex(prev => prev + 1)
+
+        if (charIndex === currentWord.length) {
+          setIsDeleting(true)
+        }
+      }
+    }
+
+    const timer = setTimeout(typeEffect, 100)
+    return () => clearTimeout(timer)
+  }, [charIndex, isDeleting, wordIndex])
 
   return (
     <section className="bg-gray-10 py-12 md:py-20 px-4 md:px-6 lg:px-40 xl:px-48">
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-gray-900 mb-6 md:mb-8 flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
-      <span className="mb-1 md:mb-0">Sabemos que você precisa de</span>
-      <span className="inline-block h-[2em] md:h-[1em] overflow-hidden md:ml-2">
-        <span
-          className={`inline-block text-[#0337CC] transition-opacity duration-1000 ease-in-out ${
-            isAnimating ? 'opacity-0' : 'opacity-100'
-          }`}
-        >
-          {currentWord}
-        </span>
-      </span>
-    </h2>
-    <p className="text-sm sm:text-base md:text-lg lg:text-base text-gray-700 mb-10 md:mb-10 text-center md:text-left">
-      O nosso Time de Especialistas, alinhados à Tecnologia, trabalha duro para apoiá-lo no exercício da Advocacia. A percepção de que a advocacia estava ficando defasada em relação à inovação e tecnologia, nos inspirou a desenvolver diversas soluções para apoiar você na gestão de seu escritório. :
-    </p>
-      <div className="flex space-x-4 justify-center md:justify-start mb-8 md:mb-12">
-        <SocialIcon icon="instagram" />
-        <SocialIcon icon="facebook" />
-        <SocialIcon icon="linkedin" />
-        <SocialIcon icon="twitter" />
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-gray-900 mb-6 md:mb-8 flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
+          <span className="mb-1 md:mb-0">Sabemos que você precisa de</span>
+          <span className="inline-block h-[2em] md:h-[1em] overflow-hidden md:ml-2">
+            <span className="inline-block text-[#0337CC]">
+              {displayText}
+            </span>
+          </span>
+        </h2>
+        <p className="text-sm sm:text-base md:text-lg lg:text-base text-gray-700 mb-10 md:mb-10 text-center md:text-left">
+          O nosso Time de Especialistas, alinhados à Tecnologia, trabalha duro para apoiá-lo no exercício da Advocacia. A percepção de que a advocacia estava ficando defasada em relação à inovação e tecnologia, nos inspirou a desenvolver diversas soluções para apoiar você na gestão de seu escritório. :
+        </p>
+        <div className="flex space-x-4 justify-center md:justify-start mb-8 md:mb-12">
+          <SocialIcon icon="instagram" />
+          <SocialIcon icon="facebook" />
+          <SocialIcon icon="linkedin" />
+          <SocialIcon icon="twitter" />
+        </div>
       </div>
-    </div>
 
-    <div className="container mx-auto text-center text-black">
-    <h2 className="text-2xl md:text-3xl lg:text-2xl font-bold mb-8">Pronto para simplificar sua prática jurídica?</h2>
-    <Link href="/signup" className="bg-[#0337CC] text-white px-6 md:px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 inline-block">
-      Comece seu teste gratuito
-    </Link>
-  </div>
-</section>
+      <div className="container mx-auto text-center text-black">
+        <h2 className="text-1xl md:text-3xl lg:text-2xl font-bold mb-8">Pronto para simplificar sua prática jurídica?</h2>
+        <Link href="/" className="bg-[#0337CC] text-white px-6 md:px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 inline-block">
+          Comece seu teste gratuito
+        </Link>
+      </div>
+    </section>
   )
 }
 
@@ -89,4 +98,3 @@ function SocialIcon({ icon }: { readonly icon: string }) {
     </div>
   )
 }
-

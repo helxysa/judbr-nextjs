@@ -64,8 +64,9 @@ function ModalEmail() {
 
       <div className="flex flex-col md:flex-row">
         <div className="p-10 pt-15 md:w-3/5">
-          <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
-            Software de gestão de escritório de advocacia simplificado
+          <h2 className="text-4xl md:text-4xl font-bold text-white mb-4">
+          Gestão Jurídica<br />
+          Simplificada
           </h2>
           <p className="text-white text-base md:text-lg mb-8">
             Ajudamos você a fazer o que é certo pelos seus clientes e a chegar em casa para jantar a tempo. Vencedores.
