@@ -35,7 +35,7 @@ const Nav = () => {
         </button>
         
         <div className="hidden md:block">
-          <Link href="#" className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-[#8F85F3] transition duration-300">
+          <Link href="#" className="bg-[#24B364] text-white px-4 py-2 rounded-md hover:bg-[#008c3f] transition duration-300">
             Experimente Grátis
           </Link>
         </div>
@@ -44,11 +44,11 @@ const Nav = () => {
       {/* Menu mobile */}
       <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <Link href="/pages/precos" className="block text-purple-600 hover:text-purple-800 py-2">Preços</Link>
-          <Link href="#" className="block text-purple-600 hover:text-purple-800 py-2">Recursos</Link>
-          <Link href="#" className="block text-purple-600 hover:text-purple-800 py-2">Sobre Nós</Link>
-          <Link href="#" className="block text-purple-600 hover:text-purple-800 py-2">Contato</Link>
-          <Link href="#" className="block bg-[#7367F0] text-white px-4 py-2 rounded-md hover:bg-purple-700 mt-4 transition duration-300">
+          <Link href="/pages/precos" className="block text-white hover:text-gray-100 py-2">Preços</Link>
+          <Link href="#" className="block text-white hover:text-gray-100 py-2">Recursos</Link>
+          <Link href="#" className="block text-white hover:text-gray-100 py-2">Sobre Nós</Link>
+          <Link href="#" className="block text-white hover:text-gray-100 py-2">Contato</Link>
+          <Link href="#" className="block bg-[#24B364] text-white px-4 py-2 rounded-md hover:bg-purple-700 mt-4 transition duration-300">
             Experimente Grátis
           </Link>
         </div>

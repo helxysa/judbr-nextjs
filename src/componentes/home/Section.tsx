@@ -24,13 +24,13 @@ function Section() {
   }, [])
 
   return (
-    <section className="bg-gray-10 py-12 md:py-20 px-4 md:px-30 lg:px-40 xl:px-48">
+    <section className="bg-gray-10 py-12 md:py-20 px-4 md:px-6 lg:px-40 xl:px-48">
   <div className="max-w-7xl mx-auto">
     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-gray-900 mb-6 md:mb-8 flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
       <span className="mb-1 md:mb-0">Sabemos que você precisa de</span>
       <span className="inline-block h-[2em] md:h-[1em] overflow-hidden md:ml-2">
         <span
-          className={`inline-block text-purple-600 transition-opacity duration-1000 ease-in-out ${
+          className={`inline-block text-[#0337CC] transition-opacity duration-1000 ease-in-out ${
             isAnimating ? 'opacity-0' : 'opacity-100'
           }`}
         >
@@ -51,7 +51,7 @@ function Section() {
 
     <div className="container mx-auto text-center text-black">
     <h2 className="text-2xl md:text-3xl lg:text-2xl font-bold mb-8">Pronto para simplificar sua prática jurídica?</h2>
-    <Link href="/signup" className="bg-[#7367f0] text-white px-6 md:px-8 py-3 rounded-md font-semibold hover:bg-purple-700 transition duration-300 inline-block">
+    <Link href="/signup" className="bg-[#0337CC] text-white px-6 md:px-8 py-3 rounded-md font-semibold hover:bg-purple-700 transition duration-300 inline-block">
       Comece seu teste gratuito
     </Link>
   </div>

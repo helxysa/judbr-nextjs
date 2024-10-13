@@ -35,8 +35,8 @@ const faqItems: FAQItem[] = [
 
 export default function FrequentlyAsked() {
     return (
-      <div className="w-full mx-auto px-4 py-12 md:py-20 sm:px-6 md:px-30 lg:px-40 xl:px-48 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <div className="w-full mx-auto px-4 py-12 md:py-20 sm:px-6 md:px-30 lg:px-40 xl:px-48 bg-gray-200">
+        <div className="max-w-7xl mx-auto ">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-center mb-8 text-gray-900">
             Perguntas Frequentes
           </h2>
@@ -54,7 +54,7 @@ export default function FrequentlyAsked() {
     const [isOpen, setIsOpen] = useState(false);
   
     return (
-      <div className="bg-white border-b border-gray-200">
+      <div className="bg-gray-200 border-b border-gray-200">
         <button
           className="flex justify-between items-center w-full py-5 px-4 text-left focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -67,7 +67,7 @@ export default function FrequentlyAsked() {
           </span>
         </button>
         <div 
-          className={`overflow-hidden bg-white transition-all duration-300 ${isOpen ? 'max-h-96' : 'max-h-0'}`}
+          className={`overflow-hidden bg-gray-200 transition-all duration-300 ${isOpen ? 'max-h-96' : 'max-h-0'}`}
         >
           <div className="p-4 pt-0 text-sm sm:text-base md:text-lg lg:text-base text-gray-700">
             <p>{answer}</p>

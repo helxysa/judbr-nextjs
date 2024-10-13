@@ -48,53 +48,63 @@ function ModalEmail() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
-      <div className="relative w-full max-w-md bg-white rounded-lg shadow-xl overflow-hidden">
-        <button
-          onClick={closeModal}
-          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+      <div className="relative w-full max-w-5xl bg-[#0337CC] rounded-lg shadow-xl overflow-hidden pt-20 mb-20">
+      <img 
+        src="/image/judbr-white.png" 
+        alt="Logo da JUDBR" 
+        className="absolute top-10 left-10 w-24 sm:w-28 md:w-32 lg:w-36 h-auto"
+      />
+    <button
+        onClick={closeModal}
+        className="absolute top-2 right-2 text-white hover:text-gray-200 z-10">
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-        <div className="bg-purple-700 p-6 sm:p-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
-            JUDBR
+      <div className="flex flex-col md:flex-row">
+        <div className="p-10 pt-15 md:w-3/5">
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
+            Software de gestão de escritório de advocacia simplificado
           </h2>
-          <p className="text-white text-sm sm:text-base">
+          <p className="text-white text-base md:text-lg mb-8">
             Ajudamos você a fazer o que é certo pelos seus clientes e a chegar em casa para jantar a tempo. Vencedores.
           </p>
-        </div>
-
-        <div className="p-6 sm:p-8">
-          <form onSubmit={handleSubmit}>
-            <div className="mb-4">
-              <input
-                type="email"
-                placeholder="Insira seu email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
+            <input
+              type="email"
+              placeholder="Digite seu email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="flex-grow px-4 py-2 rounded-md focus:outline-none"
+              required
+            />
             <button
               type="submit"
-              className="w-full bg-[#24B364] text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition duration-300"
+              className="bg-green-500 text-white font-semibold py-2 px-6 rounded-md hover:bg-green-600 transition duration-300"
             >
               ACESSO GRATUITO
             </button>
           </form>
-          <p className="mt-4 text-sm text-center text-gray-600">
-            Já tem uma conta? <Link href="/login" className="text-blue-600 hover:underline">Login</Link>
+          <p className="mt-4 text-sm text-white">
+            Já tem uma conta? <Link href="/login" className="text-white underline">Login</Link>
           </p>
-          <p className="mt-2 text-xs text-center text-gray-500">
-            Ao criar uma conta, você está concordando com os nossos Termos de Serviço e Política de Privacidade
+          <p className="mt-2 text-xs text-gray-200">
+            Ao criar uma conta, você está concordando com os nossos{' '}
+            <Link href="/termos" className="underline">Termos de Serviço</Link> e{' '}
+            <Link href="/privacidade" className="underline">Política de Privacidade</Link>
           </p>
         </div>
+        <div className="hidden md:block md:w-2/5 overflow-hidden">
+            <img 
+              src="https://www.practicepanther.com/wp-content/uploads/dynamic/2020/07/home-modal-616x0-c-default.png" 
+              alt="Dashboard Preview" 
+              className="w-30px h-full object-cover object-left"
+            />
+          </div>
       </div>
     </div>
+  </div>
   );
 }
 

@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-800 text-purple-200 py-10">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+    <footer className="bg-blue-800 text-blue-200 py-10">
+    <div className="container mx-auto px-6">
+      <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold">JUDBR</h2>
             <p>Software de gestão jurídica para o advogado moderno</p>
