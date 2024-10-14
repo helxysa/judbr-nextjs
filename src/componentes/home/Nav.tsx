@@ -52,7 +52,7 @@ export default function Nav() {
                 <div className="absolute left-0 mt-2 w-[800px] bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                   <div className="py-10 px-16 flex">
                     <div className="w-1/2 pr-12">
-                      <h3 className="text-lg font-semibold text-gray-800 mb-6">Tipos de Prática</h3>
+                      <h3 className="text-lg font-semibold text-gray-800 mb-6">Funcionalidades</h3>
                       <div className="space-y-5">
                         <Link href="/solucoes/praticas-solo" className="flex items-center text-base text-gray-700 hover:text-judbr-main">
                           <div className="bg-gray-200 rounded-full p-3 mr-4">

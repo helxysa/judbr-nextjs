@@ -27,7 +27,7 @@ export default function Testimonials() {
     return (
         <section className="bg-gray-100 pt-8 pb-4 md:pt-6 md:pb-3">
         <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48">
-          <h2 className="text-3xl md:text-4xl text-center mb-12 font-bold ">O que nossos clientes dizem</h2>
+          <h2 className="text-3xl md:text-4xl text-center mb-12 font-bold ">Advogados e Escritórios que Confiam no JudBR</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
                 

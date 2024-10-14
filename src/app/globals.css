@@ -2,18 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 :root {
   --foreground: #171717;
 }
-
-/* @font-face {
-  font-family: 'intercom-font';
-  src: url('/fonts/intercom-font.woff2') format('woff2'),
-       url('/fonts/intercom-font.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
 
 
 @media (prefers-color-scheme: dark) {
@@ -25,7 +18,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 @layer utilities {
