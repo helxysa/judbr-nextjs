@@ -26,10 +26,11 @@ export default function Nav() {
 
   return (
     <>
-       <header className="bg-[#0337CC]">
-        <nav className="bg-blue-700">
+       <header className="bg-judbr-main">
+        <nav className="bg-judbr-main">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
             {/* Logo (não modificada) */}
+            
             <div className="hidden md:block ml-10">
             <Link href="/" className="text-white font-bold text-xl ">
               <Image src="/image/judbr-white.png" alt="JUDBR Logo" width={130} height={120} />

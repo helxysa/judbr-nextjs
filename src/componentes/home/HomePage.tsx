@@ -7,7 +7,7 @@ import FeaturedIn from './FeaturedIn';
 import Testimonials from './Testmonials';
 import StartFreeTrial from './StartFreeTrail';
 import Partnes from './Partnes';
-
+import ColorPicker from '../ColorPicker/ColorPicker';
 
 
 export default function HomePage (){
@@ -17,8 +17,8 @@ export default function HomePage (){
   return (
 
     <div className="flex flex-col min-h-screen">
-      
       <main className="flex-grow">
+      <ColorPicker /> {/* Tirar isso depois */}
       
 
       

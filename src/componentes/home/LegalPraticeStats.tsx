@@ -110,7 +110,7 @@ export default function LegalPracticeStats() {
                 animationDelay: `${index * 200}ms`,
               }}
             >
-              <p className="text-4xl font-bold text-blue-600 mb-4 text-center">
+              <p className="text-4xl font-bold text-judbr-main mb-4 text-center">
                 {isVisible
                   ? (stat.value.includes('+') 
                       ? counts[index].toFixed(0) + '+'

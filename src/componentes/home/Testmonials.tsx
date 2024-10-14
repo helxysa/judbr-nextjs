@@ -56,7 +56,7 @@ export default function Testimonials() {
         </div>
       </div>
       <div className="flex justify-center py-10">
-          <Link href="/pages/sobre-nos" className="text-blue-500 hover:text-blue-600 underline">Veja mais depoimentos</Link>
+          <Link href="/pages/sobre-nos" className="text-judbr-main hover:text-gray-600 underline">Veja mais depoimentos</Link>
           </div>
     </section>
     );

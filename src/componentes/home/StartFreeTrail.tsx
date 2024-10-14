@@ -5,7 +5,7 @@ export default function StartFreeTrial(){
 
     
 
-    <section className=" bg-[#0337CC] text-white py-16 px-4 sm:px-6 lg:px-8">
+    <section className=" bg-judbr-main text-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
           <Image
@@ -36,13 +36,13 @@ export default function StartFreeTrial(){
             INICIAR TESTE GRATUITO
           </button>
         </form>
-        <p className="text-sm text-blue-200">
+        <p className="text-sm text-white-200">
           Ao criar uma conta, você concorda com nossos{' '}
-          <a href="/termos" className="underline hover:text-white">
+          <a href="/termos" className="underline hover:text-gray-300">
             Termos de Serviço
           </a>{' '}
           e{' '}
-          <a href="/privacidade" className="underline hover:text-white">
+          <a href="/privacidade" className="underline hover:text-gray-300">
             Política de Privacidade
           </a>
         </p>
