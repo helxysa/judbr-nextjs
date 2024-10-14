@@ -7,13 +7,13 @@
   --foreground: #171717;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'intercom-font';
   src: url('/fonts/intercom-font.woff2') format('woff2'),
        url('/fonts/intercom-font.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 
 @media (prefers-color-scheme: dark) {
