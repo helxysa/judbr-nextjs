@@ -19,7 +19,7 @@ export function ModalEmail({ isOpen, onClose }: ModalEmailProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
-      <div className="relative w-full max-w-5xl bg-[#0337CC] rounded-lg shadow-xl overflow-hidden pt-20 mb-20">
+      <div className="relative w-full max-w-5xl bg-judbr-main rounded-lg shadow-xl overflow-hidden pt-20 mb-20">
         <img 
           src="/image/judbr-white.png" 
           alt="Logo da JUDBR" 
@@ -59,7 +59,7 @@ export function ModalEmail({ isOpen, onClose }: ModalEmailProps) {
               </button>
             </form>
             <p className="mt-4 text-sm text-white">
-              Já tem uma conta? <Link href="/login" className="text-white underline">Login</Link>
+              Já tem uma conta? <Link href="https://app.judbr.com.br/auth/login" target="_blank" className="text-white underline">Login</Link>
             </p>
             <p className="mt-2 text-xs text-gray-200">
               Ao criar uma conta, você está concordando com os nossos{' '}

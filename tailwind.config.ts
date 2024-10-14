@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/componentes/**/*.{js,ts,jsx,tsx,mdx}", // Corrigido de "components" para "componentes"
+    "./src/componentes/**/*.{js,ts,jsx,tsx,mdx}", 
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -20,6 +20,9 @@ const config: Config = {
         'judbr-main': 'var(--judbr-main)',
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        sans: ['intercom-font', '"Helvetica Neue"', '"Apple Color Emoji"', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },
