@@ -9,9 +9,6 @@ import StartFreeTrial from './StartFreeTrail';
 import Partnes from './Partnes';
 
 
-import { ModalProvider } from '../modals/ModalEmail';
-import EmailModal from '../modals/ModalEmail';
-
 
 export default function HomePage (){
 
@@ -108,10 +105,12 @@ export default function HomePage (){
 <div className="container bg-white mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 space-y-16 py-12 md:py-20">
   <FrequentlyAsked />
 </div>
-          
+
+{/*           
           <ModalProvider>
             <EmailModal />
-          </ModalProvider>
+          </ModalProvider> */}
+
         </main>
       </div>  
   );
