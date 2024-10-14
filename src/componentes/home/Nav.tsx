@@ -27,7 +27,7 @@ export default function Nav() {
   return (
     <>
        <header className="bg-judbr-main">
-        <nav className="bg-judbr-main">
+        <nav className="bg-judbr-main fixed top-0 w-full z-50">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
             {/* Logo (não modificada) */}
             
@@ -72,7 +72,7 @@ export default function Nav() {
               <Link href="#" onClick={openEmailModal} className="bg-[#24B364] text-white px-4 py-2 rounded-full hover:bg-[#008c3f] transition duration-300">
                 Experimente Grátis
               </Link>
-              <Link href="/pages/contato" className="text-white hover:text-gray-200 ml-4">Login</Link>
+              <Link href="https://app.judbr.com.br/auth/login/" target="_blank" className="text-white hover:text-gray-200 ml-4">Login</Link>
             </div>
 
             {/* Layout mobile */}
@@ -99,7 +99,7 @@ export default function Nav() {
           </div>
           
           {/* Menu mobile (barra lateral) */}
-          <div className={`fixed inset-0 z-50 bg-blue-800 transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
+          <div className={`fixed inset-0 z-50 bg-judbr-main transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
               <div className="flex flex-col h-full w-full">
                 <div className="flex justify-end p-4">
                   <button onClick={toggleMobileMenu} className="text-white focus:outline-none">
@@ -175,7 +175,7 @@ export default function Nav() {
                       Experimente Grátis
                     </Link>
                   </div>
-                  <Link href="/" className="block text-white hover:text-gray-200 py-2 border-b border-white" onClick={() => setIsMobileMenuOpen(false)}>Conecte-se</Link>
+                  <Link href="https://app.judbr.com.br/auth/login/" target="_blank" className="block text-white hover:text-gray-200 py-2 border-b border-white" onClick={() => setIsMobileMenuOpen(false)}>Conecte-se</Link>
                 </div>
                 
               </div>
