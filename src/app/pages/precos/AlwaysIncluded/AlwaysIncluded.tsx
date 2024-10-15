@@ -6,7 +6,7 @@ interface FeatureProps {
   
   function Feature({ icon, text }: FeatureProps) {
     return (
-      <div className="flex flex-col items-center text-center py-10 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg hover:bg-purple-50 rounded-lg">
+      <div className="flex flex-col hover:shadow-lg hover:bg-gray-50 items-center text-center py-10 px-4 bg-white shadow-md  rounded-lg">
         <div className="mb-2 text-judbr-main">{icon}</div>
         <p className="text-sm text-gray-900">{text}</p>
       </div>
@@ -47,12 +47,12 @@ interface FeatureProps {
       ), alt: 'iPhone, iPad & Android App', text: 'iPhone, iPad & Android App' },
     ];
     return (
-      <div className="bg-gray-100 md:py-10 px-4 sm:px-6 py-12 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">
-         Sempre incluído, independente do plano escolhido
+      <div className="bg-gray-100 md:py-16 px-4 sm:px-6 py-12 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-800">
+          Sempre incluído, independente do plano escolhido
         </h2>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 ">
           {features.map((feature, index) => (
             <Feature key={index} {...feature} />
           ))}

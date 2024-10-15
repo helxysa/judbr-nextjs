@@ -1,5 +1,5 @@
 import HomePage from "@/componentes/home/HomePage";
-import Nav from "@/componentes/home/Nav";
+
 
  
 

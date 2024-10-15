@@ -77,7 +77,7 @@ export default function HomePage (){
       </div>
     </div>
   </div>
-  <FeaturedIn  />
+  <FeaturedIn title="Aparece em" />
   
 </section>
 

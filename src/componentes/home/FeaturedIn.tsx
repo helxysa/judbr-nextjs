@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function FeaturedIn (){
+export default function FeaturedIn ({title}: {title: string}){
   const logos = [
     { src: "/image/above-law.png", alt: "Above The Law", maxWidth: 50 },
     { src:"/image/abc.png", alt: "ABC", maxWidth: 32},
@@ -20,7 +20,7 @@ export default function FeaturedIn (){
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-20 flex justify-center">
           <div className="hidden md:flex items-center">
             <h2 className="text-1xs text-gray-600 whitespace-nowrap pr-6 relative">
-              Featured In
+              {title}
               <span className="absolute top-1/2 right-0 h-7 w-px bg-gray-600 transform translate-y-[-50%]"></span>
             </h2>
             <div className="flex items-center space-x-6 lg:space-x-10 pl-6">
