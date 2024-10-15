@@ -1,4 +1,4 @@
-# JUDBR - Sistema de Gestão Jurídica
+# Landing Page - JUDBR - Sistema de Gestão Jurídica
 
 JUDBR é um software de gestão jurídica projetado para advogados modernos, oferecendo automação de escritório e aumento de produtividade.
 
