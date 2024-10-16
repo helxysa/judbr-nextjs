@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-judbr-main text-white py-10">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <footer className="bg-judbr-main text-white py-10 ">
+      <div className="container mx-auto px-4 max-w-7xl font-light text-light">
         <div className="md:flex md:justify-center">
           {/* Logo para mobile */}
           <div className="mb-8 text-center md:hidden">
@@ -58,11 +58,11 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-sm">
-          <div className="flex flex-wrap justify-center space-x-4 mb-4">
-            <p className="mr-20">Copyright &copy; {new Date().getFullYear()} JUDBR. Todos os direitos reservados.</p>
+          <div className="flex flex-wrap justify-center space-x-4 mb-4 roboto-thin">
+            <p className="mr-20 roboto-thin ">Copyright &copy; {new Date().getFullYear()} JudBR. Todos os direitos reservados.</p>
             <Link href="/termos" className="hover:underline">Termos de Serviço</Link>
             <Link href="/privacidade" className="hover:underline">Política de Privacidade</Link>
-            <Link href="https://app.judbr.com.br/auth/login/" className="hover:underline">Login</Link>
+            
           </div>
         </div>
       </div>

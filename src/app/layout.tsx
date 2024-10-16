@@ -3,6 +3,15 @@ import "./globals.css";
 import Footer from "@/componentes/home/Footer";
 import ColorPicker from "@/componentes/ColorPicker/ColorPicker";
 import { Metadata, Viewport } from 'next';
+import { Roboto } from 'next/font/google';
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  variable: '--font-roboto',
+});
+
+
 
 export const metadata: Metadata = {
   title: 'Judbr',
@@ -24,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-white pt-20">
+      <body className="bg-white pt-20 font-roboto" >
         <Nav />
         {children}
         <Footer />

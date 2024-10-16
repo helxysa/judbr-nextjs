@@ -9,6 +9,7 @@ import PriceComparison from './PriceComparison/PriceComparison';
 import FeaturedIn from '@/componentes/home/FeaturedIn';
 import Testimonials from '@/componentes/home/Testmonials'
 import Cta from '@/componentes/home/cta/Cta'
+import StartFreeTrial from '@/componentes/home/cta/StartFreeTrail'
 
 export default function Precos() {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -104,11 +105,16 @@ export default function Precos() {
         </div>
 
 
+                 <StartFreeTrial />
+         
+
         <div className="bg-white w-full">
             <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20">
                  <FrequentlyAsked />
             </div>
         </div>
+
+        
 
      
       

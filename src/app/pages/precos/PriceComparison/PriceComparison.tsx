@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const features = [
   { name: 'Contact & Matter Management', category: 'ALWAYS INCLUDED' },
@@ -93,7 +93,7 @@ export default function PricingComparison() {
         <table className="w-full text-xs sm:text-sm text-left text-gray-500">
           <thead className="text-xs text-gray-800 uppercase bg-white border-b">
             <tr>
-            <th scope="col" className="px-2 sm:px-6 py-2 sm:py-3">
+              <th scope="col" className="px-2 sm:px-6 py-2 sm:py-3">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2 sm:text-[2px]">
                     <span className={`md:text-sm text-xs ${!isAnnual ? 'font-bold' : ''}`}>Mensal</span>
@@ -125,7 +125,7 @@ export default function PricingComparison() {
           </thead>
           <tbody>
             {features.map((feature, featureIndex) => (
-              <>
+              <React.Fragment key={`feature-${featureIndex}`}>
                 {feature.category !== features[featureIndex - 1]?.category && (
                   <tr key={`category-${feature.category}`} className="bg-gray-50 border-t border-b">
                     <td colSpan={plans.length + 1} className="px-2 sm:px-6 py-4 font-bold text-gray-700">
@@ -133,12 +133,12 @@ export default function PricingComparison() {
                     </td>
                   </tr>
                 )}
-                <tr key={featureIndex} className="bg-white border-b">
+                <tr className="bg-white border-b">
                   <th scope="row" className="px-2 sm:px-6 py-2 sm:py-4 font-medium text-gray-800 whitespace-normal sm:whitespace-nowrap">
                     {feature.name}
                   </th>
                   {plans.map((plan, planIndex) => (
-                    <td key={planIndex} className={`px-2 sm:px-6 py-2 sm:py-4 text-center ${plan.name === 'BANCA' ? 'bg-gray-50' : ''}`}>
+                    <td key={`plan-${planIndex}`} className={`px-2 sm:px-6 py-2 sm:py-4 text-center ${plan.name === 'BANCA' ? 'bg-gray-50' : ''}`}>
                       {plan.features.includes(feature.name) ? (
                         <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#24B364] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
@@ -149,7 +149,7 @@ export default function PricingComparison() {
                     </td>
                   ))}
                 </tr>
-              </>
+              </React.Fragment>
             ))}
           </tbody>
         </table>

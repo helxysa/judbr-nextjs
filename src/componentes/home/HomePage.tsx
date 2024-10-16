@@ -25,11 +25,11 @@ export default function HomePage (){
       <section className="bg-white py-20 ">
       <div className="container mx-auto px-9 md:px-12 lg:px-24 xl:px-32 flex flex-col md:flex-row items-center justify-between">
     <div className="md:w-1/2 mb-10 md:mb-0 md:pr-8 lg:pr-16 md:ml-8 lg:ml-16">
-      <h1 className="text-4xl md:text-4 lg:text-5xl font-bold text-gray-800 mb-3">
+      <h1 className="text-4xl md:text-4 lg:text-5xl font-semibold text-gray-800 mb-3">
       Simplifique a Gestão do Seu Escritório de Advocacia
 
     </h1>
-      <p className="text-base md:text-lg lg:text-1xs text-gray-900 mb-8">Gerencie clientes, documentos e processos jurídicos em uma plataforma intuitiva e segura.</p>
+      <p className="text-base font-thin md:text-lg lg:text-1xs text-gray-900 mb-8">Gerencie clientes, documentos e processos jurídicos em uma plataforma intuitiva e segura.</p>
       <form className="flex flex-col sm:flex-row" onSubmit={(e) => e.preventDefault()}>
         <input 
           type="email" 

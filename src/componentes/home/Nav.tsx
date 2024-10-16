@@ -27,7 +27,7 @@ export default function Nav() {
   return (
     <>
        <header className="bg-judbr-main">
-        <nav className="bg-judbr-main fixed top-0 w-full z-50">
+        <nav className="bg-judbr-main fixed top-0 w-full z-50 ">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
             
             <div className="hidden md:block ml-10">
@@ -84,25 +84,25 @@ export default function Nav() {
                     <div className="w-1/2 pl-12 border-l border-gray-200">
                       <h3 className="text-lg font-semibold text-gray-800 mb-6">Áreas de Atuação</h3>
                       <div className="space-y-5">
-                        <Link href="/areas/lei-falencias" className="flex items-center text-base text-gray-700 hover:text-judbr-main">
+                        <Link href="/pages/areas-atuacao" className="flex items-center text-base text-gray-700 hover:text-judbr-main">
                           <div className="bg-gray-200 rounded-full p-3 mr-4">
                             <svg className="w-7 h-7 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd"></path></svg>
                           </div>
                           <div className="font-medium">Lei de Falências</div>
                         </Link>
-                        <Link href="/areas/danos-pessoais" className="flex items-center text-base text-gray-700 hover:text-judbr-main">
+                        <Link href="/pages/areas-atuacao" className="flex items-center text-base text-gray-700 hover:text-judbr-main">
                           <div className="bg-gray-200 rounded-full p-3 mr-4">
                             <svg className="w-7 h-7 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clipRule="evenodd"></path></svg>
                           </div>
                           <div className="font-medium">Danos Pessoais</div>
                         </Link>
-                        <Link href="/areas/contencioso-civel" className="flex items-center text-base text-gray-700 hover:text-judbr-main">
+                        <Link href="/pages/areas-atuacao" className="flex items-center text-base text-gray-700 hover:text-judbr-main">
                           <div className="bg-gray-200 rounded-full p-3 mr-4">
                             <svg className="w-7 h-7 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clipRule="evenodd"></path></svg>
                           </div>
                           <div className="font-medium">Contencioso Cível</div>
                         </Link>
-                        <Link href="/areas/todas" className="flex items-center text-base text-judbr-main hover:text-judbr-main mt-6">
+                        <Link href="/pages/areas-atuacao" className="flex items-center text-base text-judbr-main hover:text-judbr-main mt-6">
                           <span className="font-medium">TODAS AS ÁREAS DE ATUAÇÃO</span>
                           <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
                         </Link>
