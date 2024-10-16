@@ -13,9 +13,9 @@ export default function Precos() {
 
   return (
     <div className="bg-white w-full">
-    <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-30 xl:px-48 py-15 md:py-10 lg:py-10 lg:pb-3">
+    <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-30 xl:px-48 py-15 md:py-10 lg:py-10">
     <div className="bg-white flex flex-col min-h-screen">
-      <main className="py-20 md:py-26 lg:py-26 lg:pb-3">
+      <main className="py-20 md:py-26 lg:py-26">
         <div className="container mx-auto px-6">
           <h1 className="text-4xl font-bold text-gray-900  text-center mb-6">Escolha o plano perfeito</h1>
           <p className="text-xl text-gray-900  text-center mb-12">Planos flexíveis para se adequar ao seu escritório, sem surpresas</p>
@@ -80,20 +80,20 @@ export default function Precos() {
         
 
         <div className="bg-gray-100 w-full">
-            <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20 lg:pb-3">
+            <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20">
                 <AlwaysIncluded />
             </div>
         </div>
 
         <div className="bg-gray-100 w-full">
-            <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20 lg:pb-3">
+            <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20">
                 <PriceComparison />
             </div>
         </div>
 
 
         <div className="bg-white w-full">
-            <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20 lg:pb-3">
+            <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20">
                  <FrequentlyAsked />
             </div>
         </div>
