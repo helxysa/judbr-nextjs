@@ -8,7 +8,7 @@ interface FeatureProps {
     return (
       <div className="flex flex-col hover:shadow-lg hover:bg-gray-50 items-center text-center py-10 px-4 bg-white shadow-md  rounded-lg">
         <div className="mb-2 text-judbr-main">{icon}</div>
-        <p className="text-sm text-gray-900">{text}</p>
+        <p className="text-sm text-gray-800">{text}</p>
       </div>
     );
   }

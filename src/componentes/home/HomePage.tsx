@@ -5,7 +5,7 @@ import FrequentlyAsked from './FrequentlyAsked';
 import LegalPracticeStats from './LegalPraticeStats';
 import FeaturedIn from './FeaturedIn';
 import Testimonials from './Testmonials';
-import StartFreeTrial from './StartFreeTrail';
+import StartFreeTrial from './cta/StartFreeTrail';
 import Partnes from './Partnes';
 import ColorPicker from '../ColorPicker/ColorPicker';
 

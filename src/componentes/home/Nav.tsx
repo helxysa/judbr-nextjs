@@ -29,7 +29,6 @@ export default function Nav() {
        <header className="bg-judbr-main">
         <nav className="bg-judbr-main fixed top-0 w-full z-50">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
-            {/* Logo (não modificada) */}
             
             <div className="hidden md:block ml-10">
             <Link href="/" className="text-white font-bold text-xl ">
@@ -37,7 +36,6 @@ export default function Nav() {
             </Link>
             </div>
 
-            {/* Menu para desktop (não modificado) */}
             <div className="hidden md:flex items-center space-x-6">
             <Link href="/pages/precos" className="text-white hover:text-gray-200">Preços</Link>
               <div className="relative group">
@@ -119,7 +117,6 @@ export default function Nav() {
               <Link href="/pages/contato" className="text-white hover:text-gray-200">Contato</Link>
             </div>
             
-            {/* Botão "Experimente Grátis" para desktop (não modificado) */}
             <div className="hidden md:block">
               <Link href="#" onClick={openEmailModal} className="bg-[#24B364] text-white px-4 py-2 rounded-full hover:bg-[#008c3f] transition duration-300">
                 Experimente Grátis
@@ -129,7 +126,6 @@ export default function Nav() {
 
             {/* Layout mobile */}
             <div className="md:hidden flex items-center justify-between w-full">
-              {/* Botão de menu para mobile (à esquerda) */}
               <button 
                 onClick={toggleMobileMenu} 
                 className="text-white focus:outline-none" 

@@ -21,11 +21,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      fontFamily: {
-        sans: ['intercom-font', '"Helvetica Neue"', '"Apple Color Emoji"', 'Helvetica', 'Arial', 'sans-serif'],
-      },
+      
     },
   },
   plugins: [],
 };
+
 export default config;
