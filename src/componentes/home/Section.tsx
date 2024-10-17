@@ -37,7 +37,7 @@ export default function Section() {
   }, [charIndex, isDeleting, wordIndex])
 
   return (
-    <section className="bg-gray-10 py-12 md:py-20 px-4 md:px-6 lg:px-40 xl:px-48">
+    <section className="bg-[##eceff5] py-12 md:py-20 px-4 md:px-6 lg:px-40 xl:px-48 ">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-gray-900 mb-6 md:mb-8 flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
           <span className="mb-1 md:mb-0">Sabemos que você precisa de</span>

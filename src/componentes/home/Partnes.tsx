@@ -13,12 +13,12 @@ export default function Partnes(){
   ];
 
   return (
-    <section className="bg-gray-100 py-[5px] pb-[4px] " style={{
+    <section className="bg-[#eceff5] py-[5px] pb-[4px] " style={{
         '--padding-desktop-top': '25px',
         '--padding-desktop-bottom': '70px',
       } as React.CSSProperties}>
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-20 flex flex-col items-center">
-          <h2 className="text-1xs text-gray-600 whitespace-nowrap mb-6 text-center font-semibold">
+          <h2 className="text-1xs text-gray-600 whitespace-nowrap mb-6 text-center font-thin">
             JUDBBR colabora com essas empresas
           </h2>
           <div className="hidden md:flex items-center justify-center w-full">

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 
 
@@ -21,7 +20,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-
+  font-family: var(--font-metropolis);
 }
 
 @layer utilities {
@@ -31,9 +30,6 @@ body {
 }
 
 
-.custom-font-light {
-  font-weight: 300 !important;
-}
 
 
 

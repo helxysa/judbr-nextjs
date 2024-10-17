@@ -3,14 +3,34 @@ import "./globals.css";
 import Footer from "@/componentes/home/Footer";
 import ColorPicker from "@/componentes/ColorPicker/ColorPicker";
 import { Metadata, Viewport } from 'next';
-import { Roboto } from 'next/font/google';
+import localFont from 'next/font/local';
 
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '700'],
-  variable: '--font-roboto',
+
+const metropolis = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Metropolis-Light.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Metropolis-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Metropolis-SemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Metropolis-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-metropolis',
 });
-
 
 
 export const metadata: Metadata = {
@@ -32,8 +52,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="bg-white pt-20 font-roboto" >
+    <html lang="en" className={`${metropolis.variable}` }>
+      <body className="bg-white pt-20 font-figtree" >
         <Nav />
         {children}
         <Footer />

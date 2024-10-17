@@ -25,17 +25,17 @@ const testimonials = [
   
 export default function Testimonials() {
     return (
-        <section className="bg-gray-100 pt-8 pb-4 md:pt-6 md:pb-3">
+        <section className="bg-[#eceff5] pt-8 pb-4 m-1 md:pt-6 md:pb-3  ">
         <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48">
-          <h2 className="text-3xl md:text-4xl text-center mb-12 font-bold ">Advogados e Escritórios que Confiam no JudBR</h2>
+          <h2 className="text-3xl md:text-4xl text-center mb-12 font-semibold tracking-wide ">Advogados e Escritórios que Confiam no JudBR</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
                 
                 <div key={index} className="bg-white p-3 rounded-lg shadow-md flex flex-col justify-between">
                 <div>
-                  <span className="text-green-500 text-4xl">"</span>
+                  <span className="text-green-500 text-5xl">"</span>
                   <div className="text-center">
-                    <p className="text-gray-700 mb-4">{testimonial.quote}</p>
+                    <p className="text-gray-700 mb-5">{testimonial.quote}</p>
                   </div>
                 </div>
                 <div>

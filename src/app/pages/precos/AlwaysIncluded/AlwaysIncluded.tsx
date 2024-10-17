@@ -47,7 +47,7 @@ interface FeatureProps {
       ), alt: 'iPhone, iPad & Android App', text: 'iPhone, iPad & Android App' },
     ];
     return (
-      <div className="bg-gray-100 md:py-16 px-4 sm:px-6 py-12 lg:px-8">
+      <div className="bg-[#eceff5] md:py-16 px-4 sm:px-6 py-12 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-800">
           Sempre incluído, independente do plano escolhido
         </h2>

@@ -54,7 +54,7 @@ export default function FrequentlyAsked() {
     const [isOpen, setIsOpen] = useState(false);
   
     return (
-      <div className="bg-white border-b border-gray-200">
+      <div className="bg-[##eceff5] border-b border-gray-200">
         <button
           className="flex justify-between items-center w-full py-5 px-4 text-left focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}

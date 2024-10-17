@@ -20,19 +20,19 @@ export default function Precos() {
     <div className="bg-white flex flex-col min-h-screen">
       <main className="py-20 md:py-26 lg:py-26">
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-bold text-gray-800  text-center mb-6">Escolha o plano perfeito</h1>
-          <p className="text-xl text-gray-800  text-center mb-12">Planos flexíveis para se adequar ao seu escritório, sem surpresas</p>
+          <h1 className="text-4xl font-bold text-[#252525] tracking-wider  text-center mb-6">Escolha o plano perfeito</h1>
+          <p className="text-xl text-[#252525]  text-center mb-12">Planos flexíveis para se adequar ao seu escritório, sem surpresas</p>
           
           <div className="flex justify-center mb-8">
             <div className="bg-gray-100 rounded-full p-1 flex">
               <button 
-                className={`px-4 py-2 rounded-full ${isMonthly ? 'bg-gray-900 text-white' : 'text-gray-800 '}`}
+                className={`px-4 py-2 rounded-full ${isMonthly ? 'bg-gray-900 text-white' : 'text-[#252525] '}`}
                 onClick={() => setIsMonthly(true)}
               >
                 Mensal
               </button>
               <button 
-                className={`px-4 py-2 rounded-full ${!isMonthly ? 'bg-gray-900 text-white' : 'text-gray-800 '}`}
+                className={`px-4 py-2 rounded-full ${!isMonthly ? 'bg-gray-900 text-white' : 'text-[#252525] '}`}
                 onClick={() => setIsMonthly(false)}
               >
                 Anual (Economize 20%)
@@ -67,7 +67,7 @@ export default function Precos() {
           <div className="text-center mt-12">
           <a 
                 href="#compare-judbr-plans" 
-                className="text-gray-800 hover:text-gray-700 font-semibold 
+                className="text-[#252525] hover:text-gray-700 font-semibold 
                           underline underline-offset-4 decoration-2 decoration-judbrmain
                           "
               >
@@ -82,7 +82,7 @@ export default function Precos() {
     </div>
         
 
-        <div className="bg-gray-100 w-full">
+        <div className="bg-[#eceff5] w-full">
             <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20">
                 <AlwaysIncluded />
             </div>
@@ -98,7 +98,7 @@ export default function Precos() {
 
         
 
-        <div className="bg-gray-100 w-full">
+        <div className="bg-[#eceff5] w-full">
             <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20">
                 <Testimonials />
             </div>

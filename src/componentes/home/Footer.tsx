@@ -15,16 +15,16 @@ export default function Footer() {
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-start md:justify-items-center'>
             <div className="text-left w-full">
               <div>
-                <h3 className="font-semibold mb-4 text-lg">Contato</h3>
-                <p className="text-sm">Av. dos Goitacazes, 865 - Buritizal</p>
-                <p className="text-sm">Macapá/AP - CEP 68-902869</p>
-                <p className="text-sm">Tel: (55 96) 98143-0617</p>
-                <p className="text-sm">Email: gilberto.macapa@gmail.com</p>
+                <h3 className="font-light tracking-wide mb-4 text-lg">Contato</h3>
+                <p className="text-sm font-light tracking-wide">Av. dos Goitacazes, 865 - Buritizal</p>
+                <p className="text-sm font-light tracking-wide">Macapá/AP - CEP 68-902869</p>
+                <p className="text-sm font-light tracking-wide">Tel: (55 96) 98143-0617</p>
+                <p className="text-sm font-light tracking-wide">Email: gilberto.macapa@gmail.com</p>
               </div>
             </div>
             
             <div className="text-left w-full">
-              <h3 className="font-semibold mb-4 text-lg">Mídias Sociais</h3>
+              <h3 className="font-light tracking-wide mb-4 text-lg">Mídias Sociais</h3>
               <div className="flex justify-start md:justify-left space-x-4">
                 <Link href="#" aria-label="Facebook">
                   <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -45,13 +45,13 @@ export default function Footer() {
             </div>
             
             <div className="text-left w-full">
-              <h3 className="font-semibold mb-4 text-lg">Empresa</h3>
+              <h3 className="font-light tracking-wide mb-4 text-lg">Empresa</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/pages/sobre-nos" className="hover:underline">Sobre nós</Link></li>
-                <li><Link href="/pages/indique-clientes" className="hover:underline">Indique Clientes</Link></li>
-                <li><Link href="/pages/seja-parceiro" className="hover:underline">Seja Parceiro</Link></li>
-                <li><Link href="/pages/trabalhe-conosco" className="hover:underline">Trabalhe Conosco</Link></li>
-                <li><Link href="/pages/contate-nos" className="hover:underline">Contate-nos</Link></li>
+                <li><Link href="/pages/sobre-nos" className="hover:underline font-light tracking-wide">Sobre nós</Link></li>
+                <li><Link href="/pages/indique-clientes" className="hover:underline font-light tracking-wide">Indique Clientes</Link></li>
+                <li><Link href="/pages/seja-parceiro" className="hover:underline font-light tracking-wide">Seja Parceiro</Link></li>
+                <li><Link href="/pages/trabalhe-conosco" className="hover:underline font-light tracking-wide">Trabalhe Conosco</Link></li>
+                <li><Link href="/pages/contate-nos" className="hover:underline font-light tracking-wide">Contate-nos</Link></li>
               </ul>
             </div>
           </div>
@@ -59,9 +59,9 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-sm">
           <div className="flex flex-wrap justify-center space-x-4 mb-4 roboto-thin">
-            <p className="mr-20 roboto-thin ">Copyright &copy; {new Date().getFullYear()} JudBR. Todos os direitos reservados.</p>
-            <Link href="/termos" className="hover:underline">Termos de Serviço</Link>
-            <Link href="/privacidade" className="hover:underline">Política de Privacidade</Link>
+            <p className="mr-20  font-light tracking-wide">Copyright &copy; {new Date().getFullYear()} JudBR. Todos os direitos reservados.</p>
+            <Link href="/termos" className="hover:underline font-light tracking-wide">Termos de Serviço</Link>
+            <Link href="/privacidade" className="hover:underline font-light tracking-wide">Política de Privacidade</Link>
             
           </div>
         </div>

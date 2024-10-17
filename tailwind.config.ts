@@ -22,7 +22,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ['Gotham', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Metropolis', 'sans-serif'],
       },
       fontWeight: {
         thin: '100',
