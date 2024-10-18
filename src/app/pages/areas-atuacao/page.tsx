@@ -44,7 +44,7 @@ export default function AreasAtuacao() {
           </section>
 
         
-        <div className="bg-gray-100 w-full">
+        <div className="bg-[#eceff5] w-full">
             <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-12 md:pb-6">
                 <PraticeAreas />
             </div>
