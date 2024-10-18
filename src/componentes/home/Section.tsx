@@ -47,8 +47,8 @@ export default function Section() {
             </span>
           </span>
         </h2>
-        <p className="text-sm sm:text-base md:text-lg lg:text-base text-gray-700 mb-10 md:mb-10 text-center md:text-left tracking-wider">
-          O nosso Time de Especialistas, alinhados à Tecnologia, trabalha duro para apoiá-lo no exercício da Advocacia. A percepção de que a advocacia estava ficando defasada em relação à inovação e tecnologia, nos inspirou a desenvolver diversas soluções para apoiar você na gestão de seu escritório. :
+        <p className="text-sm sm:text-base md:text-[18px] lg:text-[19px] text-judbr-gray mb-10 md:mb-10 text-center md:text-left tracking-wider">
+          O nosso Time de Especialistas, alinhados à Tecnologia, trabalha duro para apoiá-lo no exercício da Advocacia. A percepção de que a advocacia estava ficando defasada em relação à inovação e tecnologia, nos inspirou a desenvolver diversas soluções para apoiar você na gestão de seu escritório. 
         </p>
         <div className="flex space-x-4 justify-center md:justify-start mb-8 md:mb-12">
           <SocialIcon icon="instagram" />
@@ -60,7 +60,7 @@ export default function Section() {
 
       <div className="container mx-auto text-center text-black">
         <h2 className="text-1xl md:text-3xl lg:text-2xl font-bold mb-8 tracking-wider">Pronto para simplificar sua prática jurídica?</h2>
-        <Link href="/" className="bg-judbr-main text-white px-6 md:px-8 py-3 rounded-full font-semibold hover:bg-purple-500 transition duration-300 inline-block tracking-widest">
+        <Link href="/" className="bg-judbr-main text-white px-6 md:px-8 py-3 rounded-full font-semibold hover:bg-purple-500 transition duration-300 inline-block">
           Comece seu teste gratuito
         </Link>
       </div>

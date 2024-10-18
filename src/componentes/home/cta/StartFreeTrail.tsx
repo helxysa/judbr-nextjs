@@ -19,7 +19,7 @@ export default function StartFreeTrial(){
         <h2 className="text-3xl sm:text-2xl font-bold tracking-wide mb-4">
           Comece Seu Período de Teste Gratuito Hoje
         </h2>
-        <p className="text-xm mb-8 font-light tracking-wider">
+        <p className="text-[19px] mb-8 font-light tracking-wider">
           JUDBR é o software líder em gestão de práticas jurídicas. Inicie um teste gratuito hoje e descubra o poder da automação no seu escritório.
         </p>
         <form className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">

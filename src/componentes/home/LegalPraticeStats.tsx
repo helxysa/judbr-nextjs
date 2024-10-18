@@ -118,7 +118,7 @@ export default function LegalPracticeStats() {
                   : '0'}
               </p>
               <div className="w-16 h-px bg-gray-400 mb-4"></div>
-              <p className="text-gray-700 text-sm text-center font-thin tracking-wider">{stat.description}</p>
+              <p className="text-gray-700 text-[16px] text-center font-thin tracking-wider">{stat.description}</p>
             </div>
           ))}
         </div>
