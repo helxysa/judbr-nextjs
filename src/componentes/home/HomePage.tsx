@@ -7,7 +7,7 @@ import FeaturedIn from './FeaturedIn';
 import Testimonials from './Testmonials';
 import StartFreeTrial from './cta/StartFreeTrail';
 import Partnes from './Partnes';
-import ColorPicker from '../ColorPicker/ColorPicker';
+import ChatBot from '@/componentes/ChatBot/ChatBot';
 
 
 export default function HomePage (){
@@ -15,11 +15,9 @@ export default function HomePage (){
  
 
   return (
-
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
-      <ColorPicker /> {/* Tirar isso depois */}
-      
+      <ChatBot />
 
       <section className="bg-white py-20 ">
   <div className="container mx-auto  px-4 md:px-8 lg:px-16 xl:px-24 flex flex-col md:flex-row items-center justify-between">

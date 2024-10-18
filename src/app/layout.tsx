@@ -1,7 +1,10 @@
+
 import Nav from "@/componentes/home/Nav";
 import "./globals.css";
 import Footer from "@/componentes/home/Footer";
 import ColorPicker from "@/componentes/ColorPicker/ColorPicker";
+import PageUp from "@/componentes/PageUp/PageUp";
+import ChatBot from "@/componentes/ChatBot/ChatBot";
 import { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 
@@ -56,8 +59,10 @@ export default function RootLayout({
       <body className="bg-white pt-20 font-figtree" >
         <Nav />
         {children}
+        {/* <ColorPicker /> */}
+        {/* <PageUp /> */}
         <Footer />
-        <ColorPicker />
+        
       </body>
     </html>
   );

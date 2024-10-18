@@ -20,7 +20,7 @@ export default function Precos() {
     <div className="bg-white flex flex-col min-h-screen">
       <main className="py-20 md:py-26 lg:py-26">
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-bold text-[#252525] tracking-wider  text-center mb-6">Escolha o plano perfeito</h1>
+          <h1 className="text-4xl font-bold text-[#252525] tracking-wider  text-center mb-6">Escolha o Plano Ideal para o Seu Escritório</h1>
           <p className="text-xl text-[#252525]  text-center mb-12">Planos flexíveis para se adequar ao seu escritório, sem surpresas</p>
           
           <div className="flex justify-center mb-8">
