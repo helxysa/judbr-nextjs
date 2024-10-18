@@ -98,22 +98,20 @@ export default function Precos() {
 
         
 
+        
         <div className="bg-[#eceff5] w-full">
-            <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20">
-                <Testimonials />
-            </div>
+          <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 py-16 md:py-14 md:pb-8">
+            <Testimonials />
+          </div>
         </div>
 
 
-                 <StartFreeTrial />
+          <StartFreeTrial />
          
 
-        <div className="bg-white w-full">
-            <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48 py-15 md:py-20 lg:py-20">
-                 <FrequentlyAsked />
-            </div>
+        <div className="container bg-white mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 space-y-18 py-14 md:py-22">
+          <FrequentlyAsked />
         </div>
-
         
 
      

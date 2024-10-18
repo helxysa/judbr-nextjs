@@ -71,34 +71,34 @@ export default function HomePage (){
       </div>
     </div>
   </div>
-  <FeaturedIn title="Aparece em" />
+
+            <FeaturedIn title="Aparece em" />
+  
 </section> 
      
 
+        <div className="bg-[#eceff5] w-full">
+          <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 py-16 md:py-14 md:pb-8">
+            <Testimonials />
+          </div>
+        </div>
 
-<div className="bg-[#eceff5] w-full">
-  <div className="container mx-auto px-4 sm:px-6 md:px-40 lg:px-64 xl:px-52 py-16 md:py-14 md:pb-8">
-  <Testimonials />
-  </div>
-</div>
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 space-y-18 py-14 md:py-7">
+          <Section />
+        </div>
 
+        <div className="bg-[#eceff5] w-full">
+          <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 py-16 md:py-22">
+            <LegalPracticeStats />
+            <Partnes />
+          </div>
+        </div>
 
-<div className="container mx-auto px-4 sm:px-6 md:px-34 lg:px-44 xl:px-52 space-y-18 py-14 md:py-7">
-  <Section />
-</div>
+        <StartFreeTrial />
 
-<div className="bg-[#eceff5] w-full">
-  <div className="container mx-auto px-4 sm:px-6 md:px-34 lg:px-44 xl:px-52 py-16 md:py-22">
-    <LegalPracticeStats />
-    <Partnes />
-  </div>
-</div>
-
-<StartFreeTrial />
-
-<div className="container bg-white mx-auto px-4 sm:px-6 md:px-34 lg:px-44 xl:px-52 space-y-18 py-14 md:py-22">
-  <FrequentlyAsked />
-</div>
+        <div className="container bg-white mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 space-y-18 py-14 md:py-22">
+          <FrequentlyAsked />
+        </div>
 
 {/*           
           <ModalProvider>

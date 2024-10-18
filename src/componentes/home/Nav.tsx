@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useLayoutEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ModalEmail } from '../modals/ModalEmail';
@@ -11,18 +11,21 @@ export default function Nav() {
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1320);
+      setIsMobile(window.innerWidth <= 1369);
     };
-
+  
     handleResize();
     window.addEventListener('resize', handleResize);
-
+  
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+
+
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -40,17 +43,18 @@ export default function Nav() {
 
   return (
     <>
-      <header className="bg-judbr-main">
+        <header className="bg-judbr-main">
         <nav className="bg-judbr-main fixed top-0 w-full z-50">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
             
-            {!isMobile && (
-              <div className="flex-shrink-0 transition-all duration-300 -ml-10 md:mr-0">
-                <Link href="/" className="text-white font-bold text-xl flex items-center">
-                  <Image src="/image/judbr-white.png" alt="JUDBR Logo" width={130} height={120} className="w-24 sm:w-28 md:w-32 lg:w-40" />
-                </Link>
-              </div>
-            )}
+              <div className="flex-shrink-0 -ml-10 max-[1360px]:hidden">
+                <Link href="/" className="flex items-center">
+                <img src="/image/judbr-white.png" alt="JUDBR Logo" width={120} height={120} className="w-24 sm:w-28 md:w-32 lg:w-40" />
+              </Link>
+            </div>
+            
+           
+
 
             <div className={`${isMobile ? 'hidden' : 'hidden lg:flex'} items-center space-x-6 justify-center flex-grow  ml-6`}>
               <div className="flex items-center space-x-6">
