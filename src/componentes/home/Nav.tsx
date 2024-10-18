@@ -63,7 +63,7 @@ export default function Nav() {
                     </svg>
                   </button>
 
-                  <div className="absolute left-0 mt-2 w-[800px] bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                  <div className="absolute left-0 mt-5 w-[800px] bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                     <div className="py-10 px-16 flex">
                       <div className="w-1/2 pr-12">
                         <h3 className="text-lg font-semibold text-gray-800 mb-6">Funcionalidades</h3>

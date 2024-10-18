@@ -17,13 +17,13 @@ export default function Cta() {
                 <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
                     <div className="relative lg:flex lg:items-center p-8">
                         <div className="lg:w-1/4 relative flex justify-center items-center">
-                            <div className="absolute transform rotate-90 -left-[70px]">
+                            <div className="absolute transform right-[30px]">
                                 <Image 
-                                    src="/image/judbr-2.png" 
+                                    src="/image/judbr-preto.png" 
                                     alt="JUDBR Logo"
                                     width={300}
                                     height={300}
-                                    className="w-48 h-48 lg:w-64 lg:h-64"
+                                    className="w-49 h-49 lg:w-45 lg:h-45"
                                 />
                             </div>
                         </div>
