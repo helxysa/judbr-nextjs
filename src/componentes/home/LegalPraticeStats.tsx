@@ -97,7 +97,7 @@ export default function LegalPracticeStats() {
   return (
     <div ref={ref} className="py-20 bg-[#eceff5] ">
       <div className="container mx-auto px-4 md:px-30 lg:px-40 xl:px-48">
-        <h1 className="text-3xl font-semibold text-gray-900 text-center mb-12">
+        <h1 className="text-3xl font-semibold text-gray-900 text-center mb-12 tracking-wider">
           Mais do que um software de gerenciamento de prática legal
         </h1>
         
@@ -118,7 +118,7 @@ export default function LegalPracticeStats() {
                   : '0'}
               </p>
               <div className="w-16 h-px bg-gray-400 mb-4"></div>
-              <p className="text-gray-700 text-sm text-center font-thin tracking-wide">{stat.description}</p>
+              <p className="text-gray-700 text-sm text-center font-thin tracking-wider">{stat.description}</p>
             </div>
           ))}
         </div>

@@ -47,11 +47,11 @@ export default function Footer() {
             <div className="text-left w-full">
               <h3 className="font-light tracking-wide mb-4 text-lg">Empresa</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/pages/sobre-nos" className="hover:underline font-light tracking-wide">Sobre nós</Link></li>
-                <li><Link href="/pages/indique-clientes" className="hover:underline font-light tracking-wide">Indique Clientes</Link></li>
-                <li><Link href="/pages/seja-parceiro" className="hover:underline font-light tracking-wide">Seja Parceiro</Link></li>
-                <li><Link href="/pages/trabalhe-conosco" className="hover:underline font-light tracking-wide">Trabalhe Conosco</Link></li>
-                <li><Link href="/pages/contate-nos" className="hover:underline font-light tracking-wide">Contate-nos</Link></li>
+                <li><Link href="/pages/sobre-nos" className="hover:underline font-light tracking-wider">Sobre nós</Link></li>
+                <li><Link href="/pages/indique-clientes" className="hover:underline font-light tracking-wider">Indique Clientes</Link></li>
+                <li><Link href="/pages/seja-parceiro" className="hover:underline font-light tracking-wider">Seja Parceiro</Link></li>
+                <li><Link href="/pages/trabalhe-conosco" className="hover:underline font-light tracking-wider">Trabalhe Conosco</Link></li>
+                <li><Link href="/pages/contate-nos" className="hover:underline font-light tracking-wider">Contate-nos</Link></li>
               </ul>
             </div>
           </div>
@@ -60,8 +60,8 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-sm">
           <div className="flex flex-wrap justify-center space-x-4 mb-4 roboto-thin">
             <p className="mr-20  font-light tracking-wide">Copyright &copy; {new Date().getFullYear()} JudBR. Todos os direitos reservados.</p>
-            <Link href="/termos" className="hover:underline font-light tracking-wide">Termos de Serviço</Link>
-            <Link href="/privacidade" className="hover:underline font-light tracking-wide">Política de Privacidade</Link>
+            <Link href="/termos" className="hover:underline font-light tracking-wider">Termos de Serviço</Link>
+            <Link href="/privacidade" className="hover:underline font-light tracking-wider">Política de Privacidade</Link>
             
           </div>
         </div>

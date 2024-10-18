@@ -16,6 +16,7 @@ const config: Config = {
     },
     extend: {
       colors: {
+        'judbr-gray': '#252525',
         'judbr-blue': '#0070f3',
         'judbr-main': '#7C3AED',
         background: "var(--background)",
