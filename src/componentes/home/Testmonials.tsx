@@ -27,7 +27,7 @@ export default function Testimonials() {
     return (
         <section className="bg-[#eceff5] pt-8 pb-4 m-1 md:pt-6 md:pb-3  ">
         <div className="container mx-auto px-4 sm:px-6 md:px-30 lg:px-40 xl:px-48">
-          <h2 className="text-3xl md:text-4xl text-center mb-12 font-semibold tracking-wider ">Advogados e Escritórios que Confiam no JudBR</h2>
+          <h2 className="text-3xl md:text-3xl text-center mb-12 font-semibold tracking-wider ">Advogados e Escritórios que Confiam no JudBR</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
                 
@@ -46,7 +46,7 @@ export default function Testimonials() {
                     <path d="M32.5 31.67C32.5 33.05 31.38 34.17 30 34.17H10C8.62 34.17 7.5 33.05 7.5 31.67C7.5 27.06 11.23 23.33 15.83 23.33H24.17C28.77 23.33 32.5 27.06 32.5 31.67Z" fill="white" />
                 </svg>
                 <p className="font-semibold text-judbr-gray text-md text-center text-[17px] tracking-wider">{testimonial.author}</p>
-                <p className="text-judbr-gray text-center tracking-wider text-[15px]">{testimonial.role}</p>
+                <p className="text-judbr-gray text-center tracking-wider text-[13px]">{testimonial.role}</p>
                 </div>
               </div>
             </div>
